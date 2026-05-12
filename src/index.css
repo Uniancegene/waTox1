@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-headline: "EB Garamond", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+
+  --color-watox-primary: #000000;
+  --color-watox-secondary: #516072;
+  --color-watox-cyan: #00dbe7;
+  --color-watox-surface: #f7f9fb;
+  --color-watox-surface-dim: #d8dadc;
+}
+
+@layer base {
+  body {
+    @apply bg-watox-surface font-body text-watox-primary;
+  }
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24px);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.energy-glow {
+  box-shadow: 0 0 30px rgba(0, 219, 231, 0.15);
+}
+
+.molecular-bg {
+  background-image: radial-gradient(circle at 2px 2px, rgba(0, 219, 231, 0.05) 1px, transparent 0);
+  background-size: 32px 32px;
+}
